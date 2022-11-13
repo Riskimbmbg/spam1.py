@@ -1,4 +1,4 @@
-# spam1.py
+PERINTAH:
 
 pkg update 
 pkg upgrade
