@@ -1,3 +1,40 @@
+# mengetik
+
+#import
+import os,sys,time
+from time import sleep
+
+# mengetik
+def mengetik(c):
+       for e in c + "\n":
+          sys.stdout.write(e)
+          sys.stdout.flush()
+          time.sleep(0.03)
+
+# program
+os.system( 'clear' )
+print("")
+mengetik("    ∎∎∎∎∎∎∎∎∎∎∎∎∎> SPAM SMS <∎∎∎∎∎∎∎∎∎∎∎∎∎")
+mengetik("    ∎                                    ∎")
+mengetik("    ∎         Author  : Rizqi Gans       ∎")
+mengetik("    ∎         YouTube : Riskimbmbg       ∎")
+mengetik("∎∎∎∎∎         Facebook: Riski mbmbg      ∎∎∎∎∎")
+mengetik("∎   ∎         GitHub  : Riskimbmbv       ∎   ∎")
+mengetik("∎   ∎                                    ∎   ∎")
+mengetik("∎   ∎∎∎∎∎∎∎∎∎∎∎∎∎> LOADING..<∎∎∎∎∎∎∎∎∎∎∎∎∎   ∎")
+time.sleep(1)
+
+# animasi loading
+mengetik("Loading [5%]")
+mengetik("Loading [25%]")
+mengetik("Loading [50%]")
+mengetik("Loading [75%]")
+mengetik("Loading [97%]")
+mengetik("Loading [99%]")
+mengetik("Loading [100%]")
+time.sleep(3)
+print("Login [✓]")
+
 import requests, os
 
 def logo():
